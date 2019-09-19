@@ -20,8 +20,18 @@
   .container {
   width: 880px;
   margin: 0 auto;
+  @media(max-width: 800px){
+    width: 750px;
+    margin: 0 auto;
+  }
   
     p {
       font-size: 1.6rem;
+    }
+  }
+
+  button {
+    @media(max-width: 500px){
+      border-radius: 0;   
     }
   }

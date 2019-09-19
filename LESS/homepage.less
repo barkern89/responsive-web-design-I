@@ -1,9 +1,19 @@
 .cta {
     display: flex;
+    @media(max-width: 800px){
+        justify-content: center;
+    }
+    @media(max-width: 500px){
+        justify-content: center;
+        margin-right: 260px;
+    }
 
     img {
         display: flex;
         margin-top: 69px;
+        @media(max-width: 800px){
+            display: none;
+        }
     }
 
     .cta-text {
@@ -12,6 +22,9 @@
         margin-top: 120px;
         text-align: center;
         padding: 0px 75px;
+        @media(max-width: 500px){
+            margin-top: 40px;
+        }
 
         button {
             background: white;
@@ -21,6 +34,9 @@
             font-size: 1.7rem;
             border: 1px solid black;
             cursor: pointer;
+            @media(max-width: 800px){
+                border-radius: 0;
+            }
 
             &:hover {
                 background: black;
@@ -35,6 +51,9 @@
     border-top: 1px solid black;
     margin-top: 76px;
     padding-top: 39px;
+    @media(max-width: 500px){
+        width: 500px;
+    }
 
     .bottom-content {
         margin-top: 37px;
@@ -42,10 +61,19 @@
         display: flex;
         padding-top: 25px;
         padding-bottom: 50px;
+        @media(max-width: 500px){
+            flex-direction: column;
+        }
 
         .text-content {
             width: 275px;
             margin-right: 12px;
+            @media(max-width: 500px){
+                width: 90%;
+                margin-left: 10px;
+                margin-bottom: 50px;
+                margin-right: 0;
+            }
 
             &:first-child {
                 margin-left: 0px;
@@ -59,15 +87,34 @@
 
     .middle-img {
         margin-top: 45px;
+        @media(max-width: 500px){
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+            margin-left: 25px;
+            width: 80%;
+        }
     }
 
     .top-content {
         display: flex;
         padding: 0px 10px;
+        @media(max-width: 500px){
+            flex-direction: column;
+            width: 500px;
+        }
 
         .text-content {
             width: 410px;
             margin-right: 34px;
+            @media(max-width: 500px){
+                margin: 0; //check this if doesn't look right
+                width: 90%;
+                margin-left: 10px;
+                margin-bottom: 50px;
+                display: flex;
+                flex-direction: column;
+            }
 
             &:first-child {
                 margin-left: 0px;
