@@ -1,3 +1,401 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
-
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+.container {
+  width: 880px;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .container {
+    width: 750px;
+    margin: 0 auto;
+  }
+}
+.container p {
+  font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  button {
+    border-radius: 0;
+  }
+}
+header {
+  display: flex;
+}
+@media (max-width: 800px) {
+  header {
+    flex-direction: column-reverse;
+    align-content: center;
+  }
+}
+@media (max-width: 500px) {
+  header {
+    justify-content: center;
+  }
+}
+header .logo {
+  margin-top: 25px;
+}
+@media (max-width: 800px) {
+  header .logo {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 25px;
+    margin-left: 230px;
+  }
+}
+@media (max-width: 500px) {
+  header .logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-right: 350px;
+    margin-left: 160px;
+    width: 25%;
+  }
+}
+header nav {
+  display: flex;
+  width: 691px;
+  vertical-align: top;
+  margin-top: 35px;
+}
+@media (max-width: 800px) {
+  header nav {
+    margin-left: 80px;
+  }
+}
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    margin: 0;
+    width: 500px;
+  }
+}
+header nav a {
+  margin-right: 65px;
+  font-size: 1.4rem;
+  color: gray;
+  text-decoration: none;
+  font-weight: bolder;
+}
+@media (max-width: 500px) {
+  header nav a {
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+    font-size: 1.4rem;
+    width: 100%;
+  }
+}
+header nav a:hover {
+  text-decoration: underline;
+}
+header nav a:first-child {
+  margin-left: 0px;
+}
+@media (max-width: 500px) {
+  header nav a:first-child {
+    border-top: 1px solid black;
+  }
+}
+header nav a:last-child {
+  margin-right: 0px;
+}
+.cta {
+  display: flex;
+}
+@media (max-width: 800px) {
+  .cta {
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .cta {
+    justify-content: center;
+    margin-right: 260px;
+  }
+}
+.cta img {
+  display: flex;
+  margin-top: 69px;
+}
+@media (max-width: 800px) {
+  .cta img {
+    display: none;
+  }
+}
+.cta .cta-text {
+  vertical-align: top;
+  font-size: 5rem;
+  margin-top: 120px;
+  text-align: center;
+  padding: 0px 75px;
+}
+@media (max-width: 500px) {
+  .cta .cta-text {
+    margin-top: 40px;
+  }
+}
+.cta .cta-text button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 1.7rem;
+  border: 1px solid black;
+  cursor: pointer;
+}
+@media (max-width: 800px) {
+  .cta .cta-text button {
+    border-radius: 0;
+  }
+}
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
+}
+.main-content {
+  border-top: 1px solid black;
+  margin-top: 76px;
+  padding-top: 39px;
+}
+@media (max-width: 500px) {
+  .main-content {
+    width: 500px;
+  }
+}
+.main-content .bottom-content {
+  margin-top: 37px;
+  padding: 0px 10px;
+  display: flex;
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+@media (max-width: 500px) {
+  .main-content .bottom-content {
+    flex-direction: column;
+  }
+}
+.main-content .bottom-content .text-content {
+  width: 275px;
+  margin-right: 12px;
+}
+@media (max-width: 500px) {
+  .main-content .bottom-content .text-content {
+    width: 90%;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    margin-right: 0;
+  }
+}
+.main-content .bottom-content .text-content:first-child {
+  margin-left: 0px;
+}
+.main-content .bottom-content .text-content:last-child {
+  margin-right: 0px;
+}
+.main-content .middle-img {
+  margin-top: 45px;
+}
+@media (max-width: 500px) {
+  .main-content .middle-img {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 25px;
+    width: 80%;
+  }
+}
+.main-content .top-content {
+  display: flex;
+  padding: 0px 10px;
+}
+@media (max-width: 500px) {
+  .main-content .top-content {
+    flex-direction: column;
+    width: 500px;
+  }
+}
+.main-content .top-content .text-content {
+  width: 410px;
+  margin-right: 34px;
+}
+@media (max-width: 500px) {
+  .main-content .top-content .text-content {
+    margin: 0;
+    width: 90%;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.main-content .top-content .text-content:first-child {
+  margin-left: 0px;
+}
+.main-content .top-content .text-content:last-child {
+  margin-right: 0px;
+}
+.contact {
+  margin-top: 57px;
+  border-top: 1px solid black;
+  padding: 39px 10px 0px;
+}
+.contact p {
+  margin: 20px 0px;
+}
+footer {
+  margin: 32px 0px;
+  text-align: center;
+  font-size: 1.4rem;
+}
